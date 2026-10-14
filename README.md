@@ -35,3 +35,6 @@
 Python
 Tkinter
 
+## Итог
+
+<img width="891" height="619" alt="image" src="https://github.com/user-attachments/assets/95dc02f4-9d39-493c-8183-e9139c6d9178" />
