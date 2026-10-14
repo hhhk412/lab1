@@ -14,26 +14,24 @@
 
 Программа представляет собой простую анимацию космического неба с приближающимися звёздами в 2D
 
-## Запуск:
+## Возможности
 
-Версия Python - 3.14
+Анимация звёздного поля.
+Звёзды разных цветов и размеров.
+Регулировка скорости движения.
+Управление направлением с помощью мыши.
+Управление
 
-### Для Windows:
-```bash
-python -m venv venv
-source venv/Scripts/activate
-pip install -r requirements.txt
-python main.py
-```
+Стрелка вверх — увеличить скорость.
+Стрелка вниз — уменьшить скорость.
+Движение мыши — изменить направление полёта.
 
-### Для Linux / macOS:
-```bash
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-python3 main.py
-```
+## Запуск
 
-## Должно открыться такое окно:
+Для запуска программы необходимо выполнить файл main.py.
 
-<img width="793" height="596" alt="image" src="https://github.com/user-attachments/assets/51fa8f3b-1a25-4bec-a8b8-96e5d6e2a57b" />
+Используемые технологии
+
+Python
+Tkinter
+
