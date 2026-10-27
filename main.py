@@ -67,30 +67,24 @@ def draw_stars():
     for star in stars:
         star["z"] -= speed
 
-        #Движение звезд с учетом направления мыши
         star["x"] -= direction_x * speed * 0.5
         star["y"] -= direction_y * speed * 0.5
 
-        #Если звезда приблизилась, создаем ее заново
         if star["z"] <= 1:
             star.update(create_star())
             continue
 
-        #Перспективная проекция 3D в 2D
         scale = 300 / star["z"]
 
         x = CENTER_X + star["x"] * scale
         y = CENTER_Y + star["y"] * scale
 
-        #Размер зависит от расстояния
         size = max(1, 5 * scale)
 
-        #Звезды за пределами экрана создаются заново
         if x < 0 or x > WIDTH or y < 0 or y > HEIGHT:
             star.update(create_star())
             continue
 
-        #Рисунок звезду
         canvas.create_oval(
             x - size,
             y - size,
@@ -100,7 +94,6 @@ def draw_stars():
             outline=""
         )
 
-    #скорость
     canvas.create_text(
         15, 15,
         anchor="nw",
